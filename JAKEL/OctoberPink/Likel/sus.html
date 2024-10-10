@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="lifevac.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <title>Vacinação - Proteja-se e Proteja o Brasil</title>
+</head>
+<body>
+    <header>
+        <h1>Importância da Vacinação</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Início</a></li>
+            <li><a href="sus.html">Vacinação</a></li>
+            <li><a href="postinhos.html">Postinhos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="donation-wrapper">
+            <div class="donation-container transparency">
+                <h2>Por que Vacinar?</h2>
+                <p class="donation-text">A vacinação é fundamental para:</p>
+                <ul>
+                    <li>Prevenção de doenças graves</li>
+                    <li>Proteção coletiva (imunidade de rebanho)</li>
+                    <li>Erradicação de doenças como a varíola</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="donation-wrapper reverse">
+            <div class="donation-container objectives">
+                <h2>Meta de Vacinação</h2>
+                <p class="donation-text">Meta atual: <strong>95%</strong> da população vacinada</p>
+                <p class="donation-text">Cobertura atual: <strong>85%</strong></p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;">85%</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="donation-wrapper">
+            <div class="donation-container transparency">
+                <h2>Tipos de Vacinas</h2>
+                <p class="donation-text">Vacinas disponíveis no SUS:</p>
+                <ul>
+                    <li>Vacinas do calendário básico</li>
+                    <li>Vacinas para grupos especiais</li>
+                    <li>Campanhas sazonais (ex: gripe)</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="donation-wrapper reverse">
+            <div class="donation-container objectives">
+                <h2>Impacto da Vacinação</h2>
+                <p class="donation-text">Confira os resultados da vacinação no Brasil:</p>
+                <img src="/api/placeholder/400/200" alt="Gráfico de Impacto da Vacinação">
+            </div>
+        </div>
+    
+        <div class="donation-wrapper">
+            <div class="donation-container transparency">
+                <h2>Mitos e Verdades</h2>
+                <p class="donation-text">Informações baseadas em evidências científicas sobre vacinação</p>
+            </div>
+        </div>
+    
+        <div class="donation-wrapper reverse">
+            <div class="donation-container objectives">
+                <h2>Benefícios</h2>
+                <p class="donation-text">A vacinação é uma das formas mais seguras e eficazes de proteção contra doenças!</p>
+            </div>
+        </div>
+
+        <form class="vaccination-form">
+            <h2>Agende sua Vacinação</h2>
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="vaccine-type">Tipo de Vacina:</label>
+                <select id="vaccine-type" name="vaccine-type">
+                    <option value="covid">COVID-19</option>
+                    <option value="flu">Gripe</option>
+                    <option value="routine">Rotina</option>
+                    <option value="other">Outras</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn">Agendar Vacinação</button>
+        </form>
+    </div>
+
+    <Script rel="stylesheet" src="script.js"></Script>
+
+    <footer>
+        <p>&copy; Saúde Brasileira 2024. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+        </div>
+        <p>Email: vacinacao@saudebrasileira.org | Telefone: 136</p>
+    </footer>
+
+    <script>
+        document.querySelector('.vaccination-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Agendamento realizado com sucesso!');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
